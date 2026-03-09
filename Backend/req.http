@@ -1,0 +1,34 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+
+    {
+"name":"John",
+"email":"john@gmail.com",
+"password":"12345"
+}
+
+###
+GET http://localhost:5000/api/auth/login
+###
+POST http://localhost:5000/api/outfits/add
+Content-Type: application/json
+
+    {
+"bodyType":"Slim",
+"occasion":"Casual",
+"top":"Denim Jacket",
+"bottom":"Blue Jeans",
+"footwear":"Sneakers",
+"image":"denim.jpg"
+}
+
+###
+GET http://localhost:5000/api/outfits/recommend?bodyType=Slim&occasion=Casual
+
+###
+GET http://localhost:5000/api/outfits/recommend?bodyType=Slim&occasion=Casual
+
+###
+GET http://localhost:5000/api/outfits/recommend?bodyType=Slim&occasion=Casual
+

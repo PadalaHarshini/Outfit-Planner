@@ -1,0 +1,54 @@
+body{
+font-family: Arial;
+text-align:center;
+background:#f5f5f5;
+}
+
+h1{
+color:#2c3e50;
+}
+
+.form-container{
+margin:20px auto;
+width:300px;
+padding:20px;
+background:white;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+background:#3498db;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+width:100%;
+}
+
+.outfit-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:20px;
+}
+
+.card{
+background:white;
+width:250px;
+margin:10px;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
