@@ -1,39 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Smart Outfit Planner</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<h1>Smart Outfit Planner</h1>
-<p>Personalized outfit recommendations based on body type and occasion</p>
-
-<div class="form-container">
-
-<label>Height (cm)</label>
-<input type="number" id="height">
-
-<label>Weight (kg)</label>
-<input type="number" id="weight">
-
-<label>Occasion</label>
-<select id="occasion">
-<option value="Casual">Casual</option>
-<option value="Formal">Formal</option>
-<option value="Party">Party</option>
-</select>
-
-<button onclick="getRecommendation()">Get Outfit</button>
-
-</div>
-
-<h2>Recommended Outfits</h2>
-
-<div id="outfits" class="outfit-container"></div>
-
-<script src="script.js"></script>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>frontend</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

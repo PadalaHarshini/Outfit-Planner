@@ -15,6 +15,25 @@ cb(null,Date.now()+"-"+file.originalname)
 
 const upload = multer({storage})
 
+// GET ALL OUTFITS
+router.get("/", async(req,res)=>{
+
+try{
+
+const outfits = await Outfit.find().sort({createdAt:-1})
+
+res.json(outfits)
+
+}
+
+catch(err){
+
+res.status(500).json(err)
+
+}
+
+})
+
 // ADD OUTFIT WITH IMAGE
 router.post("/add", upload.single("image"), async(req,res)=>{
 
