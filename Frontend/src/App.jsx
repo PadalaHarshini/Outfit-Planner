@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react"
 import "./App.css"
 import heroImage from "./assets/hero.png"
 
-const API_BASE = "http://localhost:5000"
+const API_BASE = " https://outfit-planner-1.onrender.com"
 
 const authTabs = [
   { id: "login", label: "Sign In" },
