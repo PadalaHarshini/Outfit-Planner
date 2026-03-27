@@ -9,12 +9,12 @@ function Home() {
   const [error, setError] = useState("");
 
   // Fetch all outfits initially
-  useEffect(() => {
-    fetch("http://localhost:5000/api/outfits")
-      .then((res) => res.json())
-      .then((data) => setOutfits(data))
-      .catch(() => setError("Failed to load outfits"));
-  }, []);
+useEffect(() => {
+  fetch("https://outfit-planner-1.onrender.com/api/outfits")
+    .then((res) => res.json())
+    .then((data) => setOutfits(data))
+    .catch(() => setError("Failed to load outfits"));
+}, []);
 
   // Calculate Body Type
   function getBodyType(height, weight) {
